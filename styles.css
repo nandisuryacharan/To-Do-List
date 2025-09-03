@@ -1,0 +1,97 @@
+/* General page styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* App container */
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  width: 350px;
+  text-align: center;
+}
+
+/* Title */
+.container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #2575fc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-section button {
+  padding: 10px 15px;
+  border: none;
+  background: #2575fc;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-section button:hover {
+  background: #6a11cb;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  background: #f4f4f4;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+/* Completed tasks */
+ul li.completed {
+  text-decoration: line-through;
+  color: #777;
+  background: #dcdcdc;
+}
+
+/* Delete button */
+ul li button {
+  background: crimson;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+ul li button:hover {
+  background: darkred;
+}
